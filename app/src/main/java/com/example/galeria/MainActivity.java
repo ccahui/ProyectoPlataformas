@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.galeria.Login.View.Login;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -24,13 +26,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.login:
-               // Intent intent = new Intent(this, IniciarSesion.class);
-               // startActivity(intent);
+                Intent intent = new Intent(this, Login.class);
+                startActivity(intent);
                 return (true);
 
             case R.id.logout:
                // mAuth.signOut();
-               // startActivity(new Intent(this, MainActivity.class));
+               startActivity(new Intent(this, MainActivity.class));
                 return (true);
         }
         return (super.onOptionsItemSelected(item));
