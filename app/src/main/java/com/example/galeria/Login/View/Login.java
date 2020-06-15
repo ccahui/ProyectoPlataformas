@@ -15,6 +15,7 @@ import com.example.galeria.Login.Presenter.PresenterLogin;
 import com.example.galeria.Login.Presenter.PresenterLoginImp;
 import com.example.galeria.MainActivity;
 import com.example.galeria.R;
+import com.example.galeria.Registrarse.View.Registrarse;
 
 public class Login extends AppCompatActivity implements View.OnClickListener, ViewLogin {
 
@@ -93,8 +94,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Vi
     }
 
     public void redirecToRegistrarse(){
-        //Intent intent = new Intent(IniciarSesion.this, Registrarse.class);
-        //startActivityForResult(intent, 200);
+        Intent intent = new Intent(Login.this, Registrarse.class);
+        startActivityForResult(intent, 200);
     }
 
     public String getEmail() {
@@ -108,7 +109,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener, Vi
 
     public void cargarUnUsuarioDePrueba() {
         email.setText("test@example.com");
-        password.setText("12345678");
+        password.setText("123456");
     }
 
     private void toastShow(String error) {
