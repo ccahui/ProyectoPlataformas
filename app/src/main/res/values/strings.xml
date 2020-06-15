@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Galeria</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="logout">Cerrar Sesión</string>
 </resources>
